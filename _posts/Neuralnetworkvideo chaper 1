@@ -1,0 +1,17 @@
+ Video summary
+
+- Neural networks mimic brain structures: nodes(neurons) organized in layers, with weights and biases turning connection
+- Inputs(pixel) enter input layer, outputs represent classification and predictions
+- Each neuron computes a weighted sum plus bias, then applies an activation function(eg.. sigmoid) to produce an activation
+(Why)? Weight let network learn the importance of each input.Ex: if one pixel is more useful for detecting a cat's ear, its weight becomes stronger
+The bias helps the neuron shift the activate function left or right, so its not alaways centered at zero. This gives more flexibility in learning patterns
+
+Activate Function: SIGMOID, RELU, TANH.
+(Why) Without activation, the network wud just be a linear model, no matter how many layers it is
+
+-Make the network non-linear, so it can learn complex patterns(like curves, edges, faces,.)
+- Help control gradients for effective training(some like RELU are better at avoiding vanishing gradient)
+-Weights and biases are adjusted during training using gradient descent nd backpropagation, minimizing a loss/cost function
+- Backpropagation computes gradient by propagating errors backward from output to inputs, adjusting parameters layer by layer
+- Networks learn to generalize but can overfit (too complex) or underfit(too simple)
+- Trainng large neural networks(NN) involves heavy matrix multiplication. motivating specialized hardware like TPU.
